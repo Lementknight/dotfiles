@@ -1,0 +1,208 @@
+{
+    "editor.fontFamily": "font-mononoki-nerd-font",
+    "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+    "security.workspace.trust.untrustedFiles": "open",
+    "jupyter.widgetScriptSources": [
+        "jsdelivr.com",
+        "unpkg.com"
+    ],
+    "liveServer.settings.donotShowInfoMsg": true,
+    "vscode-pets.throwBallWithMouse": true,
+    "vscode-pets.petColor": "orange",
+    "vscode-pets.theme": "beach",
+    "vscode-pets.petType": "dog",
+    "cmake.options.statusBarVisibility": "visible",
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "git.autofetch": true,
+    "[markdown]": {
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": false
+    },
+    "editor.codeActionsOnSave": {
+    },
+    "markdownlint.config": {
+        "MD013": false
+    },
+    "githubPullRequests.pullBranch": "never",
+    "terminal.explorerKind": "external",
+    "terminal.external.osxExec": "Ghostty.app",
+    "geminicodeassist.project": "",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "go": false
+    },
+    "latex-workshop.latex.recipe.default": "lualatex",
+    "latex-workshop.latex.tools": [
+ {
+  "name": "latexmk",
+  "command": "/Library/TeX/texbin/latexmk",
+  "args": [
+   "-synctex=1",
+   "-interaction=nonstopmode",
+   "-file-line-error",
+   "-pdf",
+   "-outdir=%OUTDIR%",
+   "%DOC%"
+  ],
+  "env": {}
+ },
+ {
+  "name": "lualatex",
+  "command": "/Library/TeX/texbin/lualatex",
+  "args": [
+   "-synctex=1",
+   "-interaction=nonstopmode",
+   "-file-line-error",
+   "%DOC%"
+  ],
+  "env": {}
+ },
+ {
+  "name": "xelatex",
+  "command": "/Library/TeX/texbin/xelatex",
+  "args": [
+   "-synctex=1",
+   "-interaction=nonstopmode",
+   "-file-line-error",
+   "%DOC%"
+  ],
+  "env": {}
+ },
+ {
+  "name": "pdflatex",
+  "command": "/Library/TeX/texbin/pdflatex",
+  "args": [
+   "-synctex=1",
+   "-interaction=nonstopmode",
+   "-file-line-error",
+   "%DOC%"
+  ],
+  "env": {}
+ },
+ {
+  "name": "bibtex",
+  "command": "/Library/TeX/texbin/bibtex",
+  "args": [
+   "%DOCFILE%"
+  ],
+  "env": {}
+ }
+],
+
+"latex-workshop.latex.recipes": [
+ {
+  "name": "lualatex",
+  "tools": [
+   "lualatex"
+  ]
+ },
+ {
+  "name": "pdfLaTeX",
+  "tools": [
+   "pdflatex"
+  ]
+ },
+ {
+  "name": "latexmk 🔃",
+  "tools": [
+   "latexmk"
+  ]
+ },
+ {
+  "name": "xelatex",
+  "tools": [
+   "xelatex"
+  ]
+ },
+ {
+  "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+  "tools": [
+   "pdflatex",
+   "bibtex",
+   "pdflatex",
+   "pdflatex"
+  ]
+ },
+ {
+ "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+ "tools": [
+   "xelatex",
+   "bibtex",
+   "xelatex",
+   "xelatex"
+  ]
+ }
+],
+    "github.copilot.selectedCompletionModel": "",
+    "notebook.lineNumbers": "on",
+    "window.customTitleBarVisibility": "windowed",
+    "mypy.dmypyExecutable": "${workspaceFolder}",
+    "python.analysis.typeCheckingMode": "standard",
+    "mypy.enabled": false,
+    "mypy.runUsingActiveInterpreter": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "makefile.configureOnOpen": true,
+    "cSpell.userWords": [],
+    "terminal.integrated.fontFamily": "Mononoki Nerd Font Mono",
+    "editor.allowVariableFontsInAccessibilityMode": true,
+    "terminal.integrated.fontLigatures.enabled": true,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "workbench.colorTheme": "Catppuccin Macchiato",
+    "search.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/tmp": true
+    },
+    "files.exclude": {
+        // latex files
+        "**.aux": true,
+        "**.fdb_latexmk": true,
+        "**.fls": true,
+        "**.log": true,
+        "**.out": true,
+        "**.synctex.gz": true
+    },
+    "files.watcherExclude": {
+     // latex files
+        "**.aux": true,
+        "**.fdb_latexmk": true,
+        "**.fls": true,
+        "**.log": true,
+        "**.out": true,
+        "**.synctex.gz": true,
+},
+"docxreader.font": "mononoki-Regular",
+"docxreader.theme": "light",
+"workbench.iconTheme": "catppuccin-macchiato",
+"workbench.editorAssociations": {
+    "*.copilotmd": "vscode.markdown.preview.editor",
+    "*.plist": "default"
+},
+"terminal.integrated.commandsToSkipShell": [
+    "language-julia.interrupt"
+],
+"julia.symbolCacheDownload": true,
+"julia.enableTelemetry": true,
+"claudeCode.preferredLocation": "panel",
+"claudeCode.selectedModel": "default",
+"go.toolsManagement.autoUpdate": true,
+"gopls": {
+  "build.buildFlags": ["-tags=mage"]
+},
+"files.associations": {
+    "*.tex": "latex",
+    "*.tape": "elixir"
+},
+"[latex]": {
+    "editor.formatOnPaste": false,
+    "editor.suggestSelection": "recentlyUsedByPrefix"
+}
+}
