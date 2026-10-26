@@ -11,6 +11,7 @@
     "vscode-pets.petColor": "orange",
     "vscode-pets.theme": "beach",
     "vscode-pets.petType": "dog",
+    "dart.flutterSdkPath": "~/Downloads/flutter/bin/flutter",
     "cmake.options.statusBarVisibility": "visible",
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
@@ -30,22 +31,23 @@
     "terminal.external.osxExec": "Ghostty.app",
     "geminicodeassist.project": "",
     "github.copilot.enable": {
-        "*": false,
+        "*": true,
         "plaintext": false,
         "markdown": false,
         "scminput": false,
-        "go": false
+        "go": false,
+        "python": false
     },
     "latex-workshop.latex.recipe.default": "lualatex",
     "latex-workshop.latex.tools": [
  {
   "name": "latexmk",
-  "command": "/Library/TeX/texbin/latexmk",
+  "command": "/opt/local/bin/latexmk",
   "args": [
    "-synctex=1",
    "-interaction=nonstopmode",
    "-file-line-error",
-   "-pdf",
+   "-lualatex",
    "-outdir=%OUTDIR%",
    "%DOC%"
   ],
@@ -53,7 +55,7 @@
  },
  {
   "name": "lualatex",
-  "command": "/Library/TeX/texbin/lualatex",
+  "command": "/opt/local/bin/lualatex",
   "args": [
    "-synctex=1",
    "-interaction=nonstopmode",
@@ -64,7 +66,7 @@
  },
  {
   "name": "xelatex",
-  "command": "/Library/TeX/texbin/xelatex",
+  "command": "/opt/local/bin/xelatex",
   "args": [
    "-synctex=1",
    "-interaction=nonstopmode",
@@ -75,7 +77,7 @@
  },
  {
   "name": "pdflatex",
-  "command": "/Library/TeX/texbin/pdflatex",
+  "command": "/opt/local/bin/pdflatex",
   "args": [
    "-synctex=1",
    "-interaction=nonstopmode",
@@ -86,7 +88,7 @@
  },
  {
   "name": "bibtex",
-  "command": "/Library/TeX/texbin/bibtex",
+  "command": "/opt/local/bin/bibtex",
   "args": [
    "%DOCFILE%"
   ],
@@ -142,13 +144,42 @@
     "notebook.lineNumbers": "on",
     "window.customTitleBarVisibility": "windowed",
     "mypy.dmypyExecutable": "${workspaceFolder}",
-    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.typeCheckingMode": "strict",
     "mypy.enabled": false,
     "mypy.runUsingActiveInterpreter": true,
     "python.analysis.inlayHints.functionReturnTypes": true,
     "github.copilot.nextEditSuggestions.enabled": true,
     "makefile.configureOnOpen": true,
-    "cSpell.userWords": [],
+    "cSpell.userWords": [
+        "Balatro",
+        "browsable",
+        "coreutils",
+        "Cuse",
+        "gnubin",
+        "hackathon",
+        "hackathons",
+        "Hackcon",
+        "Hanselman",
+        "Hanselman's",
+        "lementknight",
+        "libexec",
+        "Macbook",
+        "magefiles",
+        "mager",
+        "Mudd",
+        "nerdfont",
+        "noxfile",
+        "OMZP",
+        "Powerlevel",
+        "powerline",
+        "prepl",
+        "pythonic",
+        "Qiskit's",
+        "romkatv",
+        "SAVEHIST",
+        "Verchota",
+        "zicompinit"
+    ],
     "terminal.integrated.fontFamily": "Mononoki Nerd Font Mono",
     "editor.allowVariableFontsInAccessibilityMode": true,
     "terminal.integrated.fontLigatures.enabled": true,
@@ -204,5 +235,14 @@
 "[latex]": {
     "editor.formatOnPaste": false,
     "editor.suggestSelection": "recentlyUsedByPrefix"
-}
+},
+"explorer.confirmDelete": false,
+"[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.defaultColorDecorators": "never",
+    "editor.formatOnType": true,
+    "editor.wordBasedSuggestions": "off"
+},
+"editor.minimap.enabled": false,
+"git.confirmSync": false
 }

@@ -12,13 +12,16 @@ fi
 # ============================================================================
 # Environment Variables & PATH
 # ============================================================================
-export PATH="~/.local/bin/claude:$PATH"
+export PATH="$HOME/.local/bin/claude:$PATH"
+export PATH="/opt/other/:$PATH"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/coreutils/libexec/gnubin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin"
 export PATH="$HOME/.emacs.d/bin/:$PATH"
-export PATH="~/.local/bin/cask:$PATH"
+export PATH="$HOME/.local/bin/cask:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export PATH="$HOME/.cargo/env:$PATH"
 
 # History settings
 unset HISTFILE SAVEHIST
@@ -103,15 +106,6 @@ zicompinit
 
 
 
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-path=('/Users/caaguirr/.juliaup/bin' $path)
-export PATH
-
-# <<< juliaup initialize <<<
-
 
 # ============================================================================
 # Custom Functions
@@ -129,3 +123,12 @@ function mager() {
   echo "No magefiles/ directory found in any parent directory"
   return 1
 }
+
+# bun completions
+[ -s "/Users/caaguirr/.bun/_bun" ] && source "/Users/caaguirr/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH=/opt/homebrew/opt/icu4c@77/bin:$PATH
+export PATH=/opt/homebrew/opt/icu4c@77/sbin:$PATH

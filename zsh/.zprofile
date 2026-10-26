@@ -26,3 +26,7 @@ eval "$(rbenv init - --no-rehash zsh)"
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 
 eval "$(/usr/local/bin/brew shellenv zsh)"
+
+export PSPDEV="$HOME/pspdev"
+export PATH="$PATH:$PSPDEV/bin"
+
