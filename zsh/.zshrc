@@ -21,7 +21,7 @@ export PATH="$PATH:/Applications/Visual Studio Code - Insiders.app/Contents/Reso
 export PATH="$HOME/.emacs.d/bin/:$PATH"
 export PATH="$HOME/.local/bin/cask:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
-export PATH="$HOME/.cargo/env:$PATH"
+. "$HOME/.cargo/env"
 
 # History settings
 unset HISTFILE SAVEHIST
